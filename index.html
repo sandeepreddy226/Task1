@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Web Design Mastery | Responsive Portfolio</title>
+</head>
+<body>
+ <nav>
+  <div class="nav__content">
+    <div class="logo"><span>S</span>andeep</div>
+    <label for="check" class="checkbox">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <input type="checkbox" name="check" id="check"/>
+    <ul>
+      <li><a href="#" active-link>Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="section">
+  <div class="section__container">
+    <div class="content">
+      <p class="navtitle">HELLO,</p>
+      <h1 class="title">
+        I'm <span>Sandeep Reddy</span> 
+      </h1>
+      <p class="description">
+        Hi, I'm sandeep Reddy, a web developer with a strong passion for creating responsive, user-friendly, and visually appealing websites. Although I’m relatively new to the field, I have gained hands-on experience working on various web projects, from personal blogs to small business websites. I’m dedicated to learning continuously and applying my skills to develop functional and engaging online experiences.
+      </p>
+      <div class="action__btns">
+        <button class="hire__me">Hire Me</button>
+        <button class="portfolio">Portfolio</button>
+      </div>
+    </div>
+    <div class="image">
+      <img src="sunny.jpg" alt="profile" />
+    </div>
+  </div>
+</section>
+  <!--about section-->
+<div id="about">
+  <div class="container">
+    <div class="abt-row">
+      <div class="about-col-1">
+        <img src="sunny.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="subtitle">About Me</h1>
+        <p>Seeking an entry-level position in software development to leverage my skills and passion for creating innovative solutions. Eager to join a dynamic organization where I can contribute to team success, learn from experienced professionals, and grow both personally and professionally.
+
+        </p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('skills')">Skills</p>
+        </div>
+        <div class="tab-contents active-tab" id="education">
+          <ul>
+            <li><span>B.Tech</span><br>Aggregated By 68% Percentage</li>
+            <li><span>MPC</span><br>Aggregated By 88% Percentage</li>
+            <li><span>SSC</span><br>Aggregated By 82% Percentage</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="skills">
+          <ul>
+            <li><span>Frontend</span><br>Html,Css,Javascript,Bootstrap</li>
+            <li><span>Backend</span><br>Java</li></li>
+            <li><span>Database</span><br>My SQL</li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>   
+   <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">Projects</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h3>To-Do List Web Application</h3>
+                    <p>Developed a simple and interactive to-do list application using HTML, CSS, and JavaScript to enable users to efficiently manage tasks, set priorities, and track progress.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-simple"></i>
+                    <h3>Calculator Web Application</h3>
+                    <p>Developed an interactive, user-friendly calculator web application using HTML, CSS, and JavaScript to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store-ios"></i>
+                    <h3>Photography Website</h3>
+                    <p>Developed an interactive photography portfolio website to showcase a collection of images and photography work, utilizing HTML, CSS, and JavaScript for a responsive, user-friendly experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+  <div id="contact">
+    <div class="cnct-container">
+      <div class="row">
+        <div class="contact-left">
+          <h2>Contact Me</h2>
+          <p><i class="fas fa-paper-plane"></i>19n81ao496sandeep7@gmail.com</p>
+          <p><i class="fas fa-phone-square-alt"></i>8639943976</p>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="LOKASANI SANDEEP REDDY 1.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form action="mailto:contact@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Footer -->
+   <footer>
+       <p>&copy; 2024 Sandeep. All rights reserved.</p>
+       <p>Built with <span>&#9829;</span> by Sandeep</p>
+   </footer>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
